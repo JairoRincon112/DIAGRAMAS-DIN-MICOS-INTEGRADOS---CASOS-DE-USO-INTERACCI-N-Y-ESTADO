@@ -1,9 +1,10 @@
-# PORTFOLIO DE ARQUITECTURA DE SOFTWARE
+# DIAGRAMAS DINÁMICOS INTEGRADOS
 
 > **Proyecto:** Sistema de Gestión de Proyectos de Grado FESC  
 > **Integrantes:** JAIRO ANDRES RINCON BLANCO & ANDRES CAMILO CUVIDES ORTEGA  
 > **Fecha:** Noviembre 2025
- **FESC**
+
+> **FESC**
 ---
 
 ## 1. Diagrama de Casos de Uso Completo y Trazabilidad
@@ -16,7 +17,7 @@ El diagrama de Casos de Uso identifica cuatro actores principales que interactú
 * **Coordinación:** Actor administrativo que valida requisitos y gestiona la logística.
 * **Jurado:** Actor externo o interno encargado de la evaluación final.
 
-![Insertar aquí: Diagrama de Casos de Uso]
+!()[DIAGRAM_CASOS_DE_USO.draw.png]
 
 ### 1.2 Matriz de Trazabilidad (Requisitos vs. Casos de Uso)
 *Esta tabla demuestra que el modelado cubre las necesidades del negocio.*
