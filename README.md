@@ -17,7 +17,7 @@ El diagrama de Casos de Uso identifica cuatro actores principales que interactú
 * **Coordinación:** Actor administrativo que valida requisitos y gestiona la logística.
 * **Jurado:** Actor externo o interno encargado de la evaluación final.
 
-!()[DIAGRAM_CASOS_DE_USO.draw.png]
+![CASOS DE USO](./Diagramas/DIAGRAM_CASOS_DE_USO.drawio.png)
 
 ### 1.2 Matriz de Trazabilidad (Requisitos vs. Casos de Uso)
 *Esta tabla demuestra que el modelado cubre las necesidades del negocio.*
@@ -68,14 +68,14 @@ El diagrama diseñado muestra la interacción temporal para el CU-04. Se ha estr
 * **Fase 1: Gestión Administrativa:** Abarca desde el mensaje `1: SolicitarFechaSustentacion()` hasta el `8: ConfirmarAgenda()`. Aquí se observa un patrón de **Controlador** donde la "PlataformaWeb" orquesta las validaciones entre el Estudiante y Coordinación.
 * **Fase 2: Evaluación y Cierre:** Inicia con el registro de nota. Destaca el mensaje `10: CalcularNotaFinal()` como un método interno del sistema (auto-delegación) para asegurar la integridad de los datos antes de `11: GenerarActaDeGrado()`.
 
-![Insertar aquí: Diagrama de Secuencia]
+![SECUENCIA](./Diagramas/SECUENCIA.drawio.png)
 
 ### 3.2 Equivalencia en Diagrama de Comunicación
 El diagrama de comunicación valida la estructura de objetos. Se evidencia que el objeto `:PlataformaWeb` actúa como el nodo central (**Hub**) de mensajería.
 
 > **Justificación:** Este diseño centralizado reduce el acoplamiento entre actores; por ejemplo, el Estudiante nunca se comunica directamente con el Jurado en el sistema, todo pasa por la Plataforma, garantizando la seguridad del proceso.
 
-![Insertar aquí: Diagrama de Comunicación]
+![COMUNICACION](./Diagramas/COMUNICACION.drawio.png)
 
 ---
 
@@ -92,13 +92,11 @@ El diagrama de estados cubre la vida completa del objeto "Proyecto".
     * `[3.0 <= Nota < 3.5]` $\rightarrow$ Transita a **Aplazado** (Retorno cíclico tras 15 días).
     * `[Nota >= 3.5]` $\rightarrow$ Transita a **Aprobado**.
 
-![Insertar aquí: Diagrama de Estados]
+![ESTADOS](./Diagramas/ESTADOS.drawio.png)
 
 ---
 
 ## 5. Documento de Integración y Trazabilidad (El "Glue")
-
-Este apartado conecta todos los diagramas para demostrar coherencia sistémica:
 
 * **Activación de Estados:**
     Cuando en el Diagrama de Secuencia el Jurado envía el mensaje `9: RegistrarRubricaEvaluacion()`, internamente el objeto Proyecto evalúa las guardas del Diagrama de Estados.
