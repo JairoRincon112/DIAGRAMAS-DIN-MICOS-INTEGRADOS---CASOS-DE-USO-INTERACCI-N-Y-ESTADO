@@ -1,7 +1,6 @@
 # DIAGRAMAS DINÁMICOS INTEGRADOS
 
-> **Proyecto:** Sistema de Gestión de Proyectos de Grado FESC  
-> **Integrantes:** JAIRO ANDRES RINCON BLANCO & ANDRES CAMILO CUVIDES ORTEGA  
+> **Autores:** JAIRO ANDRES RINCON BLANCO & ANDRES CAMILO CUVIDES ORTEGA  
 > **Fecha:** Noviembre 2025
 
 > **FESC**
